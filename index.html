@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Developement #1</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Todo List</h1>
+    <div>
+      <input 
+      id="tf-input"
+      class="textfield" 
+      type="text" 
+      placeholder="Enter a task" 
+      /> 
+      <button class="button" onclick="addTask()">Add Task</button>
+    </div>
+    <div>
+      <ul id="task-container">
+        <li id="task-1" class="list-item"> 
+          Task 1
+          <button onclick="deleteTask('task-1')" class="delete-button">
+          Delete
+        </button>
+        </li>
+        <li class="list-item" id="task-2">
+          Task 2
+          <button class="delete-button" onclick="deleteTask('task-2')">
+            Delete
+          </button>
+        </li>
+        <li class="list-item" id="task-3">
+          Task 3
+          <button class="delete-button" onclick="deleteTask('task-2')">
+            Delete
+          </button>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
